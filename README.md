@@ -34,9 +34,13 @@ Mavy is a smart video-sharing platform that helps people record, stream, and sha
 
 ---
 
-## 💡 Motivation
+## 🔗 Related Repositories
 
-Most video-sharing tools rely heavily on third-party services, which limit control and customization. **Mavy** offers a self-hosted, real-time solution with **AI enhancements** to streamline video creation and sharing — all while keeping user data secure.
+Here are other repositories related to this project:
+
+- 🔵 [MAVY - RealTime Video Sharing Web App (Next.js)]([https://github.com/Vinayak820/MAVY---RealTime-Video-Sharing-Platform](https://github.com/Vinayak820/MAVY---RealTime-Video-Sharing-Platform.git))
+- 🟣 [MAVY Desktop App (Electron.js)]([https://github.com/Vinayak820/MAVY-Desktop-App](https://github.com/Vinayak820/Mavy---Electron-Application.git)) 
+- 🟢 [MAVY Server (Express.js)](https://github.com/Vinayak820/MAVY-Server) *(replace with actual link if different)*
 
 ---
 
