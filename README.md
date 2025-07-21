@@ -1,6 +1,9 @@
 # MAVY---RealTime-Video-Sharing-Platform
 Mavy is a smart video-sharing platform that helps people record, stream, and share videos instantly. Unlike regular tools, it doesn’t depend on YouTube or other services—it uses its own system to stream videos in real-time.
 
+
+**Mavy** is a full-stack SaaS platform that allows users to **record, stream, and share videos in real time** using a secure and scalable system. It includes **AI features** like **transcription**, **summarization**, and **metadata generation**, making it ideal for businesses, educators, content creators, and teams.
+
 ## 🚀 Features
 
 - ⚡ **Real-time Video Streaming** via WebSockets (Socket.io)
