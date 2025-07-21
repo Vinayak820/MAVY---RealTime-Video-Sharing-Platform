@@ -1,20 +1,63 @@
-## License
+# MAVY---RealTime-Video-Sharing-Platform
+Mavy is a smart video-sharing platform that helps people record, stream, and share videos instantly. Unlike regular tools, it doesn’t depend on YouTube or other services—it uses its own system to stream videos in real-time.
 
-This project is licensed for educational use only. For commercial use, a license must be purchased. You can obtain the license here: [Code License](https://webprodigies.com/license/?am_id=syednauroz5153).
+## 🚀 Features
 
-## Usage Guidelines
+- ⚡ **Real-time Video Streaming** via WebSockets (Socket.io)
+- 🧠 **AI-Powered Transcriptions** using Whisper AI
+- 📝 **Automatic Title, Summary & Description Generation** using OpenAI
+- 🔒 **Secure Authentication** with Clerk
+- 💾 **Cloud Storage & Streaming** using AWS S3 + CloudFront
+- 🖥️ **Desktop App** built with Electron.js for native recording
+- 🔔 **Real-Time Notifications** & Viewer Activity Tracking
+- 💳 **Subscription Payments** powered by Stripe
+- ⚙️ **Server-side Caching** with React Query
 
-Here are a few examples of how you can and cannot use the code:
+---
 
-- **To learn?** ✅
-- **To build a portfolio?** ✅
-- **To get a job?** ✅
-- **To run as a business?** ❌
-- **To run as a SaaS?** ❌
-- **Any form of income through the code?** ❌
-- **To resell?** ❌
-- **To create content?** ❌
-- **To claim as your own?** ❌
+## 📦 Tech Stack
 
-These are just a few examples, and there may be more situations where the code usage is restricted you can read the agreement on the website.
-This code is provided strictly for learning purposes. If you wish to use our code for any commercial purposes, please purchase a license here: [Code License](https://webprodigies.com/license/?am_id=syednauroz5153).
+| Layer          | Technology |
+|----------------|------------|
+| Frontend       | Next.js, Tailwind CSS, React Query |
+| Desktop App    | Electron.js |
+| Backend        | Express.js, Socket.io |
+| AI Models      | OpenAI GPT APIs, Whisper AI |
+| Authentication | Clerk |
+| Database       | PostgreSQL (NeonDB) |
+| File Storage   | AWS S3 |
+| Video Streaming| AWS CloudFront |
+| Payments       | Stripe |
+
+---
+
+## 💡 Motivation
+
+Most video-sharing tools rely heavily on third-party services, which limit control and customization. **Mavy** offers a self-hosted, real-time solution with **AI enhancements** to streamline video creation and sharing — all while keeping user data secure.
+
+---
+
+## 🛠️ How It Works
+
+1. **User Authentication**
+   - Users sign up or log in using Clerk.
+   - User info is stored in PostgreSQL (NeonDB).
+
+2. **Video Recording (Desktop App)**
+   - Electron.js app accesses camera, mic, and screen.
+   - Video chunks are sent in real time via WebSockets.
+
+3. **Video Storage & Streaming**
+   - Express server receives video chunks and stores them in AWS S3.
+   - Videos are streamed securely through AWS CloudFront.
+
+4. **AI Enhancements**
+   - Whisper AI transcribes the video.
+   - OpenAI generates the video’s title, description, and summary.
+
+5. **User Interface**
+   - Videos can be played back, shared, or downloaded from the web interface.
+   - Activity logs and viewer updates shown in real time.
+
+6. **Subscription System**
+   - Stripe manages plans and payments for Pro & Free users.
